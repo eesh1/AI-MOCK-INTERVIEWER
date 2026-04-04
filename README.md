@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+An AI-powered mock interview platform built using modern web technologies. Practice interviews, get real-time AI-generated questions, and receive feedback to improve your performance.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+⚛️ Built with React + TypeScript
+⚡ Powered by Vite for fast performance
+🎨 Clean UI using Shadcn UI + Tailwind CSS
+🔐 Authentication via Clerk
+🤖 AI-generated questions using Google Gemini
+🔊 Text-to-Speech feedback analysis
+🔥 Backend & database with Firebase
 
-Currently, two official plugins are available:
+📁 Project Structure
+src/
+ ├── components/
+ ├── pages/
+ ├── lib/
+ ├── hooks/
+ └── App.tsx
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Tech Stack
+React + TypeScript
+Vite
+Tailwind CSS
+Shadcn UI
+Clerk Auth
+Google Gemini API
+Firebase
 
-## Expanding the ESLint configuration
+⚙️ Installation & Setup
+1. Clone the repository
+git clone https://github.com/your-username/AI-MOCK-INTERVIEWER.git
+cd AI-MOCK-INTERVIEWER
+2. Install dependencies
+npm install
+3. Run the development server
+npm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+👉 Open: http://localhost:5173
 
-- Configure the top-level `parserOptions` property like this:
+🔐 Environment Variables
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Create a .env file in root and add:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key
+VITE_GEMINI_API_KEY=your_gemini_key
+VITE_FIREBASE_API_KEY=your_firebase_key
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+🚀 Build for Production
+npm run build
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+📌 Future Improvements
+🎥 Video interview support
+📊 Detailed analytics dashboard
+🧠 More AI evaluation metrics
+🌐 Multi-language support
