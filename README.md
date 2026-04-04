@@ -1,3 +1,4 @@
+🚀 AI Mock Interviewer
 An AI-powered mock interview platform built using modern web technologies. Practice interviews, get real-time AI-generated questions, and receive feedback to improve your performance.
 
 ✨ Features
